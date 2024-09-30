@@ -109,5 +109,7 @@ max=int(max/len(max_temps))
 print(f"The min mean is {min} and the max mean is {max}")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
-print(f"THe lowest temp is{min_temps.min()} and the max is {max(max_temps)}")
-
+#print(f"The lowest temp is{sorted(min_temps)} and the max is {sorted(max_temps)}")
+min2=sorted(min_temps)
+max2=sorted(max_temps)
+print(f"The lowest temp is {min2[0]} and the highest temp was {max2[-1]}")
