@@ -97,19 +97,19 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
-min=min_temps[0]
-max=max_temps[0]
+min_mean=min_temps[0]
+max_mean=max_temps[0]
 i=1
 while(i<len(min_temps)):
-    min=min+min_temps[i]
-    max=max+max_temps[i]
+    min_mean=min_mean+min_temps[i]
+    max_mean=max_mean+max_temps[i]
     i=i+1  
-min=int(min/len(min_temps))
-max=int(max/len(max_temps))
-print(f"The min mean is {min} and the max mean is {max}")
+min_mean=int(min_mean/len(min_temps))
+max_mean=int(max_mean/len(max_temps))
+print(f"The min mean is {min_mean} and the max mean is {max_mean}")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 #print(f"The lowest temp is{sorted(min_temps)} and the max is {sorted(max_temps)}")
-min2=sorted(min_temps)
-max2=sorted(max_temps)
-print(f"The lowest temp is {min2[0]} and the highest temp was {max2[-1]}")
+min=sorted(min_temps)
+max=sorted(max_temps)
+print(f"The lowest temp is {min[0]} and the highest temp was {max[-1]}")
