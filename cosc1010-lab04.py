@@ -2,7 +2,7 @@
 # UWYO COSC 1010
 # Submission Date
 # Lab 03 
-# Lab Section: 
+# Lab Section: 15
 # Sources, people worked with, help given to: 
 # Jay Trujio, Jhett Carr
 
@@ -99,7 +99,7 @@ min_temps = [
 # Output the results of both calculations.
 min_mean=min_temps[0]
 max_mean=max_temps[0]
-i=1
+#i=1
 #while(i<len(min_temps)):
 #    min_mean+=min_temps[i]
 #    max_mean+=max_temps[i]
