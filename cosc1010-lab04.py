@@ -100,13 +100,17 @@ min_temps = [
 min_mean=min_temps[0]
 max_mean=max_temps[0]
 i=1
-while(i<len(min_temps)):
-    min_mean=min_mean+min_temps[i]
-    max_mean=max_mean+max_temps[i]
-    i=i+1  
+#while(i<len(min_temps)):
+#    min_mean+=min_temps[i]
+#    max_mean+=max_temps[i]
+#    i=i+1
+for temp in min_temps:
+    min_mean+=temp
+for temp in max_temps:
+    max_mean+=temp
 min_mean=int(min_mean/len(min_temps))
 max_mean=int(max_mean/len(max_temps))
-print(f"The min mean is {min_mean} and the max mean is {max_mean}")
+print(f"The min average is {min_mean} and the max average is {max_mean}")
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
 #print(f"The lowest temp is{sorted(min_temps)} and the max is {sorted(max_temps)}")
